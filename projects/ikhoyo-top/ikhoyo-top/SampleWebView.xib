@@ -285,7 +285,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>SampleWebApp</string>
 					<string>UIResponder</string>
-					<string>SampleWebAppContext</string>
+					<string>SampleWebViewContext</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{353, 156}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -359,6 +359,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/IkhoyoWebViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SampleWebViewContext</string>
+					<string key="superclassName">IkhoyoWebViewContext</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/SampleWebViewContext.h</string>
 					</object>
 				</object>
 			</object>
