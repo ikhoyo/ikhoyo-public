@@ -11,17 +11,17 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-//  IkhoyoWebAppController.m
+//  IkhoyoWebViewController.m
 //  ikhoyo-ui
 //
 //  Created by William Donahue on 5/25/11.
 //  Copyright 2011 Ikhoyo. All rights reserved.
 //
 
-#import "IkhoyoWebAppController.h"
+#import "IkhoyoWebViewController.h"
 #import "GRMustache.h"
 
-@implementation IkhoyoWebAppController
+@implementation IkhoyoWebViewController
 @synthesize url;
 @synthesize baseUrl;
 @synthesize webView;
@@ -47,7 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.context = [[[IkhoyoWebAppContext alloc] init] autorelease];
+    self.context = [[[IkhoyoWebViewContext alloc] init] autorelease];
 }
 
 - (void)viewDidUnload

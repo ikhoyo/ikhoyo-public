@@ -21,17 +21,17 @@
 #import <UIKit/UIKit.h>
 #import "IkhoyoViewController.h"
 #import "DetailViewController.h"
-#import "IkhoyoWebAppController.h"
+#import "IkhoyoWebViewController.h"
 
 @interface IkhoyoHomeTableViewController : IkhoyoViewController <UITableViewDelegate, UITableViewDataSource> {
     NSMutableArray* rows;
     NSMutableArray* webAppDictionaries;
-    IBOutlet IkhoyoWebAppController* webAppController;
+    IBOutlet IkhoyoWebViewController* webAppController;
     IBOutlet DetailViewController* detailViewController;
 }
 @property (nonatomic,retain) NSMutableArray* rows;
 @property (nonatomic,retain) NSMutableArray* webAppDictionaries;
-@property (nonatomic,retain) IkhoyoWebAppController* webAppController;
+@property (nonatomic,retain) IkhoyoWebViewController* webAppController;
 @property (nonatomic,retain) DetailViewController* detailViewController;
 
 @end

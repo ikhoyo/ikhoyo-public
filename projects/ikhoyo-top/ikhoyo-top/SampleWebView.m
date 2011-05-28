@@ -18,10 +18,10 @@
 //  Copyright 2011 Ikhoyo. All rights reserved.
 //
 
-#import "SampleWebApp.h"
+#import "SampleWebView.h"
 
 
-@implementation SampleWebApp
+@implementation SampleWebView
 @synthesize webAppController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

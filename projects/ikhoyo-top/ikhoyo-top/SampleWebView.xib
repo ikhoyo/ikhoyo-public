@@ -48,7 +48,6 @@
 				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -123,7 +122,6 @@
 							<string key="NSFrame">{{0, 64}, {703, 655}}</string>
 							<reference key="NSSuperview"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<object class="NSColor" key="IBUIBackgroundColor">
 								<int key="NSColorSpace">1</int>
 								<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -293,7 +291,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>IkhoyoWebAppController</string>
+					<string>IkhoyoWebViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
@@ -316,34 +314,15 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">IkhoyoDynamicTabViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">root</string>
-						<string key="NS.object.0">UIViewController</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">root</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">root</string>
-							<string key="candidateClassName">UIViewController</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/IkhoyoDynamicTabViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">IkhoyoWebAppContext</string>
+					<string key="className">IkhoyoWebViewContext</string>
 					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/IkhoyoWebAppContext.h</string>
+						<string key="minorKey">./Classes/IkhoyoWebViewContext.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">IkhoyoWebAppController</string>
+					<string key="className">IkhoyoWebViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -354,7 +333,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>IkhoyoWebAppContext</string>
+							<string>IkhoyoWebViewContext</string>
 							<string>UIWebView</string>
 						</object>
 					</object>
@@ -369,7 +348,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">context</string>
-								<string key="candidateClassName">IkhoyoWebAppContext</string>
+								<string key="candidateClassName">IkhoyoWebViewContext</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">webView</string>
@@ -379,34 +358,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/IkhoyoWebAppController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SampleWebApp</string>
-					<string key="superclassName">IkhoyoDynamicTabViewController</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">webAppController</string>
-						<string key="NS.object.0">IkhoyoWebAppController</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">webAppController</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">webAppController</string>
-							<string key="candidateClassName">IkhoyoWebAppController</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SampleWebApp.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SampleWebAppContext</string>
-					<string key="superclassName">IkhoyoWebAppContext</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SampleWebAppContext.h</string>
+						<string key="minorKey">./Classes/IkhoyoWebViewController.h</string>
 					</object>
 				</object>
 			</object>

@@ -11,18 +11,20 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-//  IkhoyoWebAppContext.h
-//  ikhoyo-ui
+//  SampleWebApp.h
+//  ikhoyo-top
 //
 //  Created by William Donahue on 5/25/11.
 //  Copyright 2011 Ikhoyo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "IkhoyoWebViewController.h"
+#import "IkhoyoDynamicTabViewController.h"
 
-
-@interface IkhoyoWebAppContext : NSObject {
-    
+@interface SampleWebView : IkhoyoDynamicTabViewController {
+    IBOutlet IkhoyoWebViewController* webAppController;
 }
+@property (nonatomic,retain) IkhoyoWebViewController* webAppController;
 
 @end

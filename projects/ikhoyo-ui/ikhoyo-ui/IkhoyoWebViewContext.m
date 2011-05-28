@@ -11,29 +11,16 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-//  IkhoyoWebAppController.h
+//  IkhoyoWebAppContext.m
 //  ikhoyo-ui
 //
 //  Created by William Donahue on 5/25/11.
 //  Copyright 2011 Ikhoyo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "IkhoyoWebAppContext.h"
+#import "IkhoyoWebViewContext.h"
 
-@interface IkhoyoWebAppController : UIViewController <UIWebViewDelegate> {
-    NSURL* url;
-    NSURL* baseUrl;
-    NSString* baseDir;
-    IBOutlet UIWebView* webView;
-    IBOutlet IkhoyoWebAppContext* context;    
-}
-@property (nonatomic,retain) NSURL* url;
-@property (nonatomic,retain) NSURL* baseUrl;
-@property (nonatomic,retain) NSString* baseDir;
-@property (nonatomic,retain) UIWebView* webView;
-@property (nonatomic,retain) IkhoyoWebAppContext* context;
 
-- (void) start:(NSString*) dir;
+@implementation IkhoyoWebViewContext
 
 @end

@@ -15,10 +15,10 @@
 		3D0CC8CD138CC49F00772BAF /* IkhoyoDynamicTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8CB138CC49E00772BAF /* IkhoyoDynamicTabBarController.m */; };
 		3D0CC8D0138CC5C000772BAF /* IkhoyoDynamicTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0CC8CE138CC5BF00772BAF /* IkhoyoDynamicTabViewController.h */; };
 		3D0CC8D1138CC5C000772BAF /* IkhoyoDynamicTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8CF138CC5BF00772BAF /* IkhoyoDynamicTabViewController.m */; };
-		3DF7A5EC138DD84000B28F22 /* IkhoyoWebAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EA138DD83F00B28F22 /* IkhoyoWebAppController.h */; };
-		3DF7A5ED138DD84000B28F22 /* IkhoyoWebAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5EB138DD83F00B28F22 /* IkhoyoWebAppController.m */; };
-		3DF7A5F1138DD91400B28F22 /* IkhoyoWebAppContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EF138DD91300B28F22 /* IkhoyoWebAppContext.h */; };
-		3DF7A5F2138DD91400B28F22 /* IkhoyoWebAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F0138DD91400B28F22 /* IkhoyoWebAppContext.m */; };
+		3DF7A5EC138DD84000B28F22 /* IkhoyoWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EA138DD83F00B28F22 /* IkhoyoWebViewController.h */; };
+		3DF7A5ED138DD84000B28F22 /* IkhoyoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */; };
+		3DF7A5F1138DD91400B28F22 /* IkhoyoWebViewContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */; };
+		3DF7A5F2138DD91400B28F22 /* IkhoyoWebViewContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F0138DD91400B28F22 /* IkhoyoWebViewContext.m */; };
 		3DF7A623138DE66000B28F22 /* GRBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5F4138DE66000B28F22 /* GRBoolean.h */; };
 		3DF7A624138DE66000B28F22 /* GRBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F5138DE66000B28F22 /* GRBoolean.m */; };
 		3DF7A625138DE66000B28F22 /* GRMustache_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5F6138DE66000B28F22 /* GRMustache_private.h */; };
@@ -79,10 +79,10 @@
 		3D0CC8CB138CC49E00772BAF /* IkhoyoDynamicTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoDynamicTabBarController.m; sourceTree = "<group>"; };
 		3D0CC8CE138CC5BF00772BAF /* IkhoyoDynamicTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoDynamicTabViewController.h; sourceTree = "<group>"; };
 		3D0CC8CF138CC5BF00772BAF /* IkhoyoDynamicTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoDynamicTabViewController.m; sourceTree = "<group>"; };
-		3DF7A5EA138DD83F00B28F22 /* IkhoyoWebAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebAppController.h; sourceTree = "<group>"; };
-		3DF7A5EB138DD83F00B28F22 /* IkhoyoWebAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoWebAppController.m; sourceTree = "<group>"; };
-		3DF7A5EF138DD91300B28F22 /* IkhoyoWebAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebAppContext.h; sourceTree = "<group>"; };
-		3DF7A5F0138DD91400B28F22 /* IkhoyoWebAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoWebAppContext.m; sourceTree = "<group>"; };
+		3DF7A5EA138DD83F00B28F22 /* IkhoyoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebViewController.h; sourceTree = "<group>"; };
+		3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoWebViewController.m; sourceTree = "<group>"; };
+		3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebViewContext.h; sourceTree = "<group>"; };
+		3DF7A5F0138DD91400B28F22 /* IkhoyoWebViewContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoWebViewContext.m; sourceTree = "<group>"; };
 		3DF7A5F4138DE66000B28F22 /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
 		3DF7A5F5138DE66000B28F22 /* GRBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBoolean.m; sourceTree = "<group>"; };
 		3DF7A5F6138DE66000B28F22 /* GRMustache_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache_private.h; sourceTree = "<group>"; };
@@ -181,10 +181,10 @@
 				3D0CC8CB138CC49E00772BAF /* IkhoyoDynamicTabBarController.m */,
 				3D0CC8CE138CC5BF00772BAF /* IkhoyoDynamicTabViewController.h */,
 				3D0CC8CF138CC5BF00772BAF /* IkhoyoDynamicTabViewController.m */,
-				3DF7A5EA138DD83F00B28F22 /* IkhoyoWebAppController.h */,
-				3DF7A5EB138DD83F00B28F22 /* IkhoyoWebAppController.m */,
-				3DF7A5EF138DD91300B28F22 /* IkhoyoWebAppContext.h */,
-				3DF7A5F0138DD91400B28F22 /* IkhoyoWebAppContext.m */,
+				3DF7A5EA138DD83F00B28F22 /* IkhoyoWebViewController.h */,
+				3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */,
+				3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */,
+				3DF7A5F0138DD91400B28F22 /* IkhoyoWebViewContext.m */,
 			);
 			path = "ikhoyo-ui";
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 				3D0CC8C9138CC31800772BAF /* IkhoyoDelegate.h in Headers */,
 				3D0CC8CC138CC49F00772BAF /* IkhoyoDynamicTabBarController.h in Headers */,
 				3D0CC8D0138CC5C000772BAF /* IkhoyoDynamicTabViewController.h in Headers */,
-				3DF7A5EC138DD84000B28F22 /* IkhoyoWebAppController.h in Headers */,
-				3DF7A5F1138DD91400B28F22 /* IkhoyoWebAppContext.h in Headers */,
+				3DF7A5EC138DD84000B28F22 /* IkhoyoWebViewController.h in Headers */,
+				3DF7A5F1138DD91400B28F22 /* IkhoyoWebViewContext.h in Headers */,
 				3DF7A623138DE66000B28F22 /* GRBoolean.h in Headers */,
 				3DF7A625138DE66000B28F22 /* GRMustache_private.h in Headers */,
 				3DF7A626138DE66000B28F22 /* GRMustache.h in Headers */,
@@ -347,8 +347,8 @@
 				3D0CC8C7138CA0E500772BAF /* IkhoyoViewController.m in Sources */,
 				3D0CC8CD138CC49F00772BAF /* IkhoyoDynamicTabBarController.m in Sources */,
 				3D0CC8D1138CC5C000772BAF /* IkhoyoDynamicTabViewController.m in Sources */,
-				3DF7A5ED138DD84000B28F22 /* IkhoyoWebAppController.m in Sources */,
-				3DF7A5F2138DD91400B28F22 /* IkhoyoWebAppContext.m in Sources */,
+				3DF7A5ED138DD84000B28F22 /* IkhoyoWebViewController.m in Sources */,
+				3DF7A5F2138DD91400B28F22 /* IkhoyoWebViewContext.m in Sources */,
 				3DF7A624138DE66000B28F22 /* GRBoolean.m in Sources */,
 				3DF7A627138DE66000B28F22 /* GRMustache.m in Sources */,
 				3DF7A629138DE66000B28F22 /* GRMustacheBundleTemplateLoader.m in Sources */,

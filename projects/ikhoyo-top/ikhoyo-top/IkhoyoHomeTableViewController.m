@@ -19,7 +19,7 @@
 //
 
 #import "IkhoyoHomeTableViewController.h"
-#import "IkhoyoWebAppController.h"
+#import "IkhoyoWebViewController.h"
 
 @implementation IkhoyoHomeTableViewController
 @synthesize rows;
@@ -95,7 +95,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary* params = [self.webAppDictionaries objectAtIndex:indexPath.row];
-    [self.detailViewController addTab:@"SampleWebApp" withClass:@"SampleWebApp" andImage:[params valueForKey:@"image"] andParam:[params valueForKey:@"dir"]];
+    [self.detailViewController addTab:@"SampleWebView" withClass:@"SampleWebView" andImage:[params valueForKey:@"image"] andParam:[params valueForKey:@"dir"]];
 }
 
 @end
