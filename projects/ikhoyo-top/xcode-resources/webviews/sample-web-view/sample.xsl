@@ -17,9 +17,9 @@ padding: 20px;
 </head>
 <body>
 <div class="home">
-<center><h3>Welcome to the Ikhoyo Sample Web App</h3></center>
+<center><h3>Welcome to the Ikhoyo Sample Web View</h3></center>
 <p>
-The Ikhoyo Sample Web App shows you how to create web applications using the Ikhoyo libraries, xml, and xsl. It's a very streamlined and efficient way to create local web applications that run on the iPad.
+The Ikhoyo Sample Web View shows you how to create web applications using the Ikhoyo libraries, xml, and xsl. It's a very streamlined and efficient way to create local web applications that run on the iPad.
 </p>
 </div>
 </body>

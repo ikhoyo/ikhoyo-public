@@ -48,14 +48,14 @@
     self.rows = [[[NSMutableArray alloc] init] autorelease];
     self.webAppDictionaries = [[[NSMutableArray alloc] init] autorelease];
     
-    [self.rows addObject:@"Sample Web App"];
+    [self.rows addObject:@"Sample Web View"];
     UIImage* image = [UIImage imageNamed:@"www.png"];
-    NSString* dir = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"xcode-resources"] stringByAppendingPathComponent:@"webapps"] stringByAppendingPathComponent:@"sample-web-app"];
+    NSString* dir = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"xcode-resources"] stringByAppendingPathComponent:@"webviews"] stringByAppendingPathComponent:@"sample-web-view"];
     [self.webAppDictionaries addObject:[NSDictionary dictionaryWithObjectsAndKeys:dir,@"dir",image,@"image", nil]];
 }
 
 - (void) onReady {
-    NSString* dir = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"xcode-resources"] stringByAppendingPathComponent:@"webapps"] stringByAppendingPathComponent:@"home"];
+    NSString* dir = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"xcode-resources"] stringByAppendingPathComponent:@"webviews"] stringByAppendingPathComponent:@"home"];
     [self.webAppController start:dir];
 }
 
