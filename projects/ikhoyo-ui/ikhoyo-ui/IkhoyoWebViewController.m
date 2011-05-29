@@ -47,7 +47,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.context = [[[IkhoyoWebViewContext alloc] init] autorelease];
+    if (!self.context)
+        self.context = [[[IkhoyoWebViewContext alloc] init] autorelease];
 }
 
 - (void)viewDidUnload

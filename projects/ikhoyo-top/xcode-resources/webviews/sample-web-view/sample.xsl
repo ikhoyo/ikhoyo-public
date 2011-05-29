@@ -21,9 +21,23 @@ padding: 20px;
 <p>
 The Ikhoyo Sample Web View shows you how to create web applications using the Ikhoyo libraries, xml, and xsl. It's a very streamlined and efficient way to create local web applications that run on the iPad.
 </p>
+<h3>Here is the list taken from the context:</h3>
+<div>
+    <xsl:apply-templates select="//list"/>
+</div>
 </div>
 </body>
 </html>
+</xsl:template>
+    
+<xsl:template match="list">
+    <ul>
+        <xsl:apply-templates/>
+    </ul>
+</xsl:template>
+
+<xsl:template match="item">
+    <li><xsl:value-of select="text()"/></li>
 </xsl:template>
 
 </xsl:stylesheet>

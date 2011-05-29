@@ -22,6 +22,8 @@
 #import "IkhoyoWebViewContext.h"
 
 @interface SampleWebViewContext : IkhoyoWebViewContext {
+    NSMutableArray* listOfItems;
 }
+@property (nonatomic,retain) NSMutableArray* listOfItems;
 
 @end

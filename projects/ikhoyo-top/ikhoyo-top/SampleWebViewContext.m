@@ -20,6 +20,43 @@
 
 #import "SampleWebViewContext.h"
 
+@interface Item : NSObject {
+    NSString* name;
+}
+@property (nonatomic,retain) NSString* name;
+
+- (id) initWithName:(NSString*) name;
+
+@end
+
+@implementation Item
+@synthesize name;
+
+- (id) initWithName:(NSString*) n {
+    self = [super init];
+    if (self) {
+        self.name = n;
+    }
+    return self;
+    
+}
+
+@end
+
 @implementation SampleWebViewContext
+@synthesize listOfItems;
+
+- (id) init {
+    self = [super init];
+    if (self) {
+        listOfItems = [[NSMutableArray alloc] init];
+        [listOfItems addObject:[[[Item alloc] initWithName:@"List item 1"] autorelease]];
+        [listOfItems addObject:[[[Item alloc] initWithName:@"List item 2"] autorelease]];
+        [listOfItems addObject:[[[Item alloc] initWithName:@"List item 3"] autorelease]];
+        [listOfItems addObject:[[[Item alloc] initWithName:@"List item 4"] autorelease]];
+        [listOfItems addObject:[[[Item alloc] initWithName:@"List item 5"] autorelease]];
+    }
+    return self;
+}
 
 @end
