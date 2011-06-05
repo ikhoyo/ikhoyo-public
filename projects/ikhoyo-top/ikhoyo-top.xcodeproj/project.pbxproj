@@ -19,6 +19,7 @@
 		3D0CC885138C74E300772BAF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0CC884138C74E300772BAF /* home.png */; };
 		3D0CC8D3138CD36800772BAF /* libikhoyo-ui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		3D0CC8D6138DCDE200772BAF /* IkhoyoHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8D5138DCDE100772BAF /* IkhoyoHomeTableViewController.m */; };
+		3D0F8AF9139C2E4900B7A73C /* libikhoyo-sqlite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */; };
 		3DEF20C41390B888001CF2FA /* ikhoyo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF20C31390B888001CF2FA /* ikhoyo.png */; };
 		3DF7A5E7138DD5C300B28F22 /* SampleWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5E5138DD5C300B28F22 /* SampleWebView.m */; };
 		3DF7A5E8138DD5C300B28F22 /* SampleWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7A5E6138DD5C300B28F22 /* SampleWebView.xib */; };
@@ -47,11 +48,12 @@
 		3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-ui.a"; sourceTree = SOURCE_ROOT; };
 		3D0CC8D4138DCDE000772BAF /* IkhoyoHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoHomeTableViewController.h; sourceTree = "<group>"; };
 		3D0CC8D5138DCDE100772BAF /* IkhoyoHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoHomeTableViewController.m; sourceTree = "<group>"; };
+		3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-sqlite.a"; sourceTree = SOURCE_ROOT; };
 		3DEF20C31390B888001CF2FA /* ikhoyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ikhoyo.png; sourceTree = "<group>"; };
-		3DF7A5E4138DD5C300B28F22 /* SampleWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SampleWebView.h; sourceTree = "<group>"; };
+		3DF7A5E4138DD5C300B28F22 /* SampleWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleWebView.h; sourceTree = "<group>"; };
 		3DF7A5E5138DD5C300B28F22 /* SampleWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleWebView.m; sourceTree = "<group>"; };
 		3DF7A5E6138DD5C300B28F22 /* SampleWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleWebView.xib; sourceTree = "<group>"; };
-		3DF7A652138DEB1600B28F22 /* SampleWebViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SampleWebViewContext.h; sourceTree = "<group>"; };
+		3DF7A652138DEB1600B28F22 /* SampleWebViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleWebViewContext.h; sourceTree = "<group>"; };
 		3DF7A653138DEB1600B28F22 /* SampleWebViewContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleWebViewContext.m; sourceTree = "<group>"; };
 		3DF7A655138DF19B00B28F22 /* www.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = www.png; sourceTree = "<group>"; };
 		3DF7A65713908BD200B28F22 /* xcode-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "xcode-resources"; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0F8AF9139C2E4900B7A73C /* libikhoyo-sqlite.a in Frameworks */,
 				3D0CC8D3138CD36800772BAF /* libikhoyo-ui.a in Frameworks */,
 				3D0CC861138C69D900772BAF /* UIKit.framework in Frameworks */,
 				3D0CC863138C69D900772BAF /* Foundation.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		3D0CC851138C69D900772BAF = {
 			isa = PBXGroup;
 			children = (
+				3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */,
 				3DEF20C31390B888001CF2FA /* ikhoyo.png */,
 				3DF7A65713908BD200B28F22 /* xcode-resources */,
 				3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */,
@@ -294,7 +298,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ikhoyo-top/ikhoyo-top-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../ikhoyo-ui/**";
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-ui/**",
+					"../ikhoyo-sqlite/**",
+				);
 				INFOPLIST_FILE = "ikhoyo-top/ikhoyo-top-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +319,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ikhoyo-top/ikhoyo-top-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../ikhoyo-ui/**";
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-ui/**",
+					"../ikhoyo-sqlite/**",
+				);
 				INFOPLIST_FILE = "ikhoyo-top/ikhoyo-top-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

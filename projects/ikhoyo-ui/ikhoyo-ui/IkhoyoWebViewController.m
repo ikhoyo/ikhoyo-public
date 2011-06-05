@@ -36,6 +36,11 @@
 }
 
 - (void)dealloc {
+    [url release];
+    [context release];
+    [baseDir release];
+    [webView stopLoading];
+    [webView release];
     [super dealloc];
 }
 

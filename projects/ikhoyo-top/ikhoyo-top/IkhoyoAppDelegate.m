@@ -20,6 +20,7 @@
 
 #import "IkhoyoAppDelegate.h"
 #import "RootViewController.h"
+#import "IkhoyoDatabase.h"
 
 @implementation IkhoyoAppDelegate
 @synthesize ready;
@@ -44,6 +45,13 @@
 
 - (Boolean) isIkhoyoReady {
     return self.ready;
+}
+
+- (void) openDatabase:(NSString*) path {
+    IkhoyoDatabase* db = [[[IkhoyoDatabase alloc] initWithPath:path] autorelease];
+    [db open:^(id dbase) {
+        // dbase contains the opened IkhoyoDatabase
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
