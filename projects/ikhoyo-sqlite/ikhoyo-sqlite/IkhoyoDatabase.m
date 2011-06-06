@@ -46,7 +46,7 @@
     if (self) {
 		h = stmt;
 		database = db;
-		cls = NSClassFromString(lCls);
+		cls = lCls ? NSClassFromString(lCls) : nil;
 		rows = [[NSMutableArray alloc] initWithCapacity:128];
     }
 	return self;
@@ -292,6 +292,14 @@
 	}];
 }
 
+- (void) prepare:(NSString*) sql args:(NSArray*) args withBlock:(IkhoyoBlock) block {
+	__block IkhoyoDatabase* me = self;
+	[self.worker performBlock:^(id obj){
+		id arg = [me prepare:sql args:args usingClass:nil];
+		[me.worker performBlockOnMainThread:block withObject:arg];
+	}];
+}
+
 - (void) count:(NSString*) sql args:(NSArray*) args withBlock:(IkhoyoBlock) block {
 	__block IkhoyoDatabase* me = self;
 	[self.worker performBlock:^(id obj){
@@ -319,6 +327,32 @@
 		}];
 	}
 
+}
+
+- (void) insertOrUpdate:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block {
+	__block IkhoyoDatabase* me = self;
+	[self prepare:st args:args withBlock:^(id arg) {
+        __block IkhoyoStatement* insert = arg;
+ 		[self.worker performBlock:^(id obj){
+			id ret = [insert exec];
+			[me.worker performBlockOnMainThread:block withObject:ret];
+		}];
+	}];
+}
+
+- (void) execOnDatabaseThread:(IkhoyoBlock) block {
+    [self.worker performBlock:^(id obj){
+        block(nil);
+    }];    
+}
+
+- (void) execOnMainThread:(IkhoyoBlock) block {
+    [self.worker performBlockOnMainThread:block withObject:nil];
+}
+
+- (void) insertOrUpdate:(NSString*) st withBlock:(IkhoyoBlock) block {
+    NSMutableArray* args = [[[NSMutableArray alloc] init] autorelease];
+    [self insertOrUpdate:st withArgs:args withBlock:block];
 }
 
 - (void) query:(NSString*) query usingClass:(NSString*) cls withBlock:(IkhoyoBlock) block {

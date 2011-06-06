@@ -56,10 +56,14 @@
 - (void) open:(IkhoyoBlock) block;
 - (void) close:(IkhoyoBlock) block;
 - (IkhoyoError*) sqliteError:(NSString*) msg;
+- (void) execOnMainThread:(IkhoyoBlock) block;
+- (void) execOnDatabaseThread:(IkhoyoBlock) block;
+- (void) insertOrUpdate:(NSString*) st withBlock:(IkhoyoBlock) block;
 - (void) count:(IkhoyoStatement*) stmt withBlock:(IkhoyoBlock) block;
 - (void) exec:(IkhoyoStatement*) select withBlock:(IkhoyoBlock) block;
 - (void) count:(NSString*) sql args:(NSArray*) args withBlock:(IkhoyoBlock) block;
 - (void) rebind:(IkhoyoStatement*) stmt args:(NSArray*) args withBlock:(IkhoyoBlock) block;
+- (void) insertOrUpdate:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block;
 - (void) prepare:(NSString*) sql args:(NSArray*) args usingClass:(NSString*) cls withBlock:(IkhoyoBlock) block;
 - (void) select:(IkhoyoStatement*) select offset:(NSUInteger) offset limit:(NSUInteger) limit withBlock:(IkhoyoBlock) block;
 
