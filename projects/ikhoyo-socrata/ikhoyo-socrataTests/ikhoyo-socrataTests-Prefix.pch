@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ikhoyo-socrataTests' target in the 'ikhoyo-socrataTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

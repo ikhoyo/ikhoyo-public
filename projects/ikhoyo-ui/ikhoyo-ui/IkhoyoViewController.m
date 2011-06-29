@@ -19,10 +19,19 @@
 //
 
 #import "IkhoyoViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation IkhoyoViewController
 @synthesize app;
 @synthesize ready;
+@synthesize backgroundGradientColor;
+
+- (void) applyBackgroundGradient {
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.view.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[self.backgroundGradientColor CGColor], (id)[[UIColor whiteColor] CGColor], nil];
+    [self.view.layer insertSublayer:gradient atIndex:0];
+}
 
 - (void)dealloc
 {

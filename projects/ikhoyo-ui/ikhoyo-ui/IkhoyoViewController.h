@@ -24,8 +24,12 @@
 @interface IkhoyoViewController : UIViewController {
     Boolean ready;
     IBOutlet id<IkhoyoDelegate> app;
+    UIColor* backgroundGradientColor;
 }
 @property (nonatomic) Boolean ready;
 @property (nonatomic,retain) id<IkhoyoDelegate> app;
+@property (nonatomic,retain) UIColor* backgroundGradientColor;
+
+- (void) applyBackgroundGradient;
 
 @end

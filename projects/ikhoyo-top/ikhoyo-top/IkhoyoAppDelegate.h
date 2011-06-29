@@ -20,14 +20,24 @@
 
 #import <UIKit/UIKit.h>
 #import "IkhoyoDelegate.h"
+#import "IkhoyoSocrata.h"
+#import "IkhoyoDatabase.h"
 
+@class IkhoyoURLManager;
 @class RootViewController;
 @class DetailViewController;
 @interface IkhoyoAppDelegate : NSObject <UIApplicationDelegate,IkhoyoDelegate> {
     Boolean ready;
+    IkhoyoDatabase* db;
+    IkhoyoSocrata* socrata;
+    IkhoyoURLManager* urlManager;
 }
 
 @property (nonatomic) Boolean ready;
+@property (nonatomic, retain) IkhoyoDatabase* db;
+@property (nonatomic, retain) IkhoyoSocrata* socrata;
+@property (nonatomic, retain) IkhoyoURLManager* urlManager;
+
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
 @property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;

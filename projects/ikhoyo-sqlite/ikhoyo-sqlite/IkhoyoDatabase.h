@@ -61,7 +61,10 @@
 - (void) insertOrUpdate:(NSString*) st withBlock:(IkhoyoBlock) block;
 - (void) count:(IkhoyoStatement*) stmt withBlock:(IkhoyoBlock) block;
 - (void) exec:(IkhoyoStatement*) select withBlock:(IkhoyoBlock) block;
+- (id) execFromDatabaseThread:(NSString*) sql withArgs:(NSArray*) args;
 - (void) count:(NSString*) sql args:(NSArray*) args withBlock:(IkhoyoBlock) block;
+- (void) exec:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block;
+- (void) query:(NSString*) query usingClass:(NSString*) cls withBlock:(IkhoyoBlock) block;
 - (void) rebind:(IkhoyoStatement*) stmt args:(NSArray*) args withBlock:(IkhoyoBlock) block;
 - (void) insertOrUpdate:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block;
 - (void) prepare:(NSString*) sql args:(NSArray*) args usingClass:(NSString*) cls withBlock:(IkhoyoBlock) block;

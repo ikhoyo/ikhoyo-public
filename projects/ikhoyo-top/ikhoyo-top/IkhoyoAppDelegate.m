@@ -21,13 +21,102 @@
 #import "IkhoyoAppDelegate.h"
 #import "RootViewController.h"
 #import "IkhoyoDatabase.h"
+#import "IkhoyoURLManager.h"
+#import "IkhoyoSocrata.h"
+#import "JSONKit.h"
 
 @implementation IkhoyoAppDelegate
+@synthesize db;
 @synthesize ready;
+@synthesize socrata;
+@synthesize urlManager;
 @synthesize window=_window;
-@synthesize splitViewController=_splitViewController;
 @synthesize rootViewController=_rootViewController;
+@synthesize splitViewController=_splitViewController;
 @synthesize detailViewController=_detailViewController;
+
+- (NSString*) convertToColName:(NSString*) name {
+    return [[[name stringByReplacingOccurrencesOfString:@" " withString:@"_"] stringByReplacingOccurrencesOfString:@"-" withString:@"_"] lowercaseString];
+}
+
+- (NSString*) convertValue:(id) val {
+    if ([val isMemberOfClass:[NSNumber class]])
+        return [val stringValue];
+    else if ([val isKindOfClass:[NSArray class]])
+        return @"";
+    else if ([val isKindOfClass:[NSMutableArray class]])
+        return @"";
+    else if ([val isKindOfClass:[NSNull class]])
+        return @"";
+    else if ([val isKindOfClass:[NSString class]])
+        return val;//[[@"'" stringByAppendingString:val] stringByAppendingString:@"'"];
+    return @"";
+}
+
+- (void) loadTable:(id) json withColMap:(NSMutableDictionary*) map {
+    id rows = [json objectForKey:@"data"];
+    for (int i=0;i<[rows count];i++) {
+        id row = [rows objectAtIndex:i];
+        NSString* sep = @"";
+        NSMutableArray* args = [NSMutableArray arrayWithCapacity:16];
+        NSString* insert = @"INSERT INTO n5m4_msim VALUES (";
+        NSString* values = @"(";
+        for (int j=0;j<[row count];j++) {
+            if (![map objectForKey:[NSNumber numberWithInt:j]])
+                continue;
+            id column = [row objectAtIndex:j];
+            NSString* val = [self convertValue:column];
+            [args addObject:val];
+            insert  = [[insert stringByAppendingString:sep] stringByAppendingString:@"?"];
+            values  = [[values stringByAppendingString:sep] stringByAppendingString:val];
+            sep = @",";
+        }
+        insert = [insert stringByAppendingString:@")"];
+        id ret = [self.db execFromDatabaseThread:insert withArgs:args];
+        if ([ret isKindOfClass:[IkhoyoError class]])
+            NSLog(@"Error inserting row %@(%@): %@",insert,values,[ret msg]);
+    }
+    NSNotification* not = [NSNotification notificationWithName:@"IkhoyoSocrataReady" object:self];
+    [[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:not waitUntilDone:NO];
+}
+
+- (void) finishInit {
+    self.urlManager = [[[IkhoyoURLManager alloc] init] autorelease];
+    self.socrata = [[[IkhoyoSocrata alloc] initWithURLManager:urlManager] autorelease];
+    
+    NSDictionary* colTypeMap = [NSDictionary dictionaryWithObjectsAndKeys:@"INTEGER",@"integer",nil];
+    [self.socrata get:@"n5m4-mism" withBlock:^(id data) {
+        NSString* ct = @"CREATE TABLE n5m4_msim (id TEXT PRIMARY KEY NOT NULL";
+        NSString* d = (NSString*) data;
+        id json = [d objectFromJSONString];
+        NSMutableDictionary* colMap = [[[NSMutableDictionary alloc] initWithCapacity:16] autorelease];
+        id columns = [[[json objectForKey:@"meta"] objectForKey:@"view"] objectForKey:@"columns"];
+        for (int i=0;i<[columns count];i++) {
+            id col = [columns objectAtIndex:i];
+            NSString* name = [self convertToColName:[col objectForKey:@"name"]];
+            NSString* dataTypeName = [col objectForKey:@"dataTypeName"];
+            if ([dataTypeName isEqualToString:@"meta_data"]&&![name isEqualToString:@"id"]) continue;
+            NSNumber* n = [NSNumber numberWithInt:i];
+            [colMap setObject:n forKey:n];
+            if ([name isEqualToString:@"id"]) continue;
+            
+            NSString* sqliteType = [colTypeMap objectForKey:dataTypeName];
+            if (sqliteType==nil)
+                sqliteType = @"TEXT";
+            NSString* coldef = [[[@"," stringByAppendingString:name] stringByAppendingString:@" "] stringByAppendingString:sqliteType];
+            ct = [ct stringByAppendingString:coldef];
+        }
+        ct = [ct stringByAppendingString:@")"];
+        [self.db execOnDatabaseThread:^(id obj) {
+            [self.db execFromDatabaseThread:@"DROP TABLE n5m4_msim" withArgs:nil];
+            id ret = [self.db execFromDatabaseThread:ct withArgs:nil];
+            if ([ret isKindOfClass:[IkhoyoError class]])
+                NSLog(@"Error creating table: %@",[ret msg]);
+            else
+                [self loadTable:json withColMap:colMap];
+        }];
+    }];    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -36,8 +125,21 @@
 
 	__block IkhoyoAppDelegate* me = self;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        me.ready = YES;
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"IkhoyoReady" object:me];
+        
+        JSONDecoder* dec = [JSONDecoder decoder]; // Dummy code to force loading of ikhoyo-socrata
+        [dec retainCount]; // Gets rid of unused compiler warning
+    
+        NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString* documentsDirectory = [paths objectAtIndex:0];
+        NSString* writablePath = [documentsDirectory stringByAppendingPathComponent:@"ikhoyo.sqlite"];
+        me.db = [[[IkhoyoDatabase alloc] initWithPath:writablePath] autorelease];
+        [me.db open:^(id dbase) {
+            [me finishInit];
+            me.ready = YES;
+            NSNotification* not = [NSNotification notificationWithName:@"IkhoyoReady" object:me];
+            [[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:not waitUntilDone:NO];
+        }];
+        
     });
     
     return YES;
@@ -45,13 +147,6 @@
 
 - (Boolean) isIkhoyoReady {
     return self.ready;
-}
-
-- (void) openDatabase:(NSString*) path {
-    IkhoyoDatabase* db = [[[IkhoyoDatabase alloc] initWithPath:path] autorelease];
-    [db open:^(id dbase) {
-        // dbase contains the opened IkhoyoDatabase
-    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

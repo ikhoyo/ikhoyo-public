@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../projects/ikhoyo-jsonkit/ikhoyo-jsonkit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../projects/ikhoyo-socrata/ikhoyo-socrata.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../projects/ikhoyo-sqlite/ikhoyo-sqlite.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,5 +15,8 @@
    </FileRef>
    <FileRef
       location = "group:../projects/ikhoyo-top/ikhoyo-top.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../projects/ikhoyo-net/ikhoyo-net.xcodeproj">
    </FileRef>
 </Workspace>

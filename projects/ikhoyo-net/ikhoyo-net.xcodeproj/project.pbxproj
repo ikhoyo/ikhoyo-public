@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D9CF7F313A1915C00A8B1A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CF7F213A1915C00A8B1A8 /* Foundation.framework */; };
+		3D9CF7FE13A1915C00A8B1A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CF7FD13A1915C00A8B1A8 /* UIKit.framework */; };
+		3D9CF7FF13A1915C00A8B1A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CF7F213A1915C00A8B1A8 /* Foundation.framework */; };
+		3D9CF80113A1915C00A8B1A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CF80013A1915C00A8B1A8 /* CoreGraphics.framework */; };
+		3D9CF80413A1915C00A8B1A8 /* libikhoyo-net.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CF7EF13A1915C00A8B1A8 /* libikhoyo-net.a */; };
+		3D9CF80A13A1915C00A8B1A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D9CF80813A1915C00A8B1A8 /* InfoPlist.strings */; };
+		3D9CF80D13A1915C00A8B1A8 /* ikhoyo_netTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3D9CF80C13A1915C00A8B1A8 /* ikhoyo_netTests.h */; };
+		3D9CF80F13A1915C00A8B1A8 /* ikhoyo_netTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CF80E13A1915C00A8B1A8 /* ikhoyo_netTests.m */; };
+		3D9CF82413A191D100A8B1A8 /* IkhoyoInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9CF82013A191D100A8B1A8 /* IkhoyoInputStream.h */; };
+		3D9CF82513A191D100A8B1A8 /* IkhoyoInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CF82113A191D100A8B1A8 /* IkhoyoInputStream.m */; };
+		3D9CF82613A191D100A8B1A8 /* IkhoyoURLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9CF82213A191D100A8B1A8 /* IkhoyoURLManager.h */; };
+		3D9CF82713A191D100A8B1A8 /* IkhoyoURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CF82313A191D100A8B1A8 /* IkhoyoURLManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D9CF80213A1915C00A8B1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9CF7E613A1915C00A8B1A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9CF7EE13A1915C00A8B1A8;
+			remoteInfo = "ikhoyo-net";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D9CF7EF13A1915C00A8B1A8 /* libikhoyo-net.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libikhoyo-net.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9CF7F213A1915C00A8B1A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D9CF7F613A1915C00A8B1A8 /* ikhoyo-net-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-net-Prefix.pch"; sourceTree = "<group>"; };
+		3D9CF7FC13A1915C00A8B1A8 /* ikhoyo-netTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ikhoyo-netTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9CF7FD13A1915C00A8B1A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D9CF80013A1915C00A8B1A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D9CF80713A1915C00A8B1A8 /* ikhoyo-netTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ikhoyo-netTests-Info.plist"; sourceTree = "<group>"; };
+		3D9CF80913A1915C00A8B1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D9CF80B13A1915C00A8B1A8 /* ikhoyo-netTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-netTests-Prefix.pch"; sourceTree = "<group>"; };
+		3D9CF80C13A1915C00A8B1A8 /* ikhoyo_netTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ikhoyo_netTests.h; sourceTree = "<group>"; };
+		3D9CF80E13A1915C00A8B1A8 /* ikhoyo_netTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ikhoyo_netTests.m; sourceTree = "<group>"; };
+		3D9CF82013A191D100A8B1A8 /* IkhoyoInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoInputStream.h; sourceTree = "<group>"; };
+		3D9CF82113A191D100A8B1A8 /* IkhoyoInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoInputStream.m; sourceTree = "<group>"; };
+		3D9CF82213A191D100A8B1A8 /* IkhoyoURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoURLManager.h; sourceTree = "<group>"; };
+		3D9CF82313A191D100A8B1A8 /* IkhoyoURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoURLManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9CF7EC13A1915C00A8B1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF7F313A1915C00A8B1A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9CF7F813A1915C00A8B1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF7FE13A1915C00A8B1A8 /* UIKit.framework in Frameworks */,
+				3D9CF7FF13A1915C00A8B1A8 /* Foundation.framework in Frameworks */,
+				3D9CF80113A1915C00A8B1A8 /* CoreGraphics.framework in Frameworks */,
+				3D9CF80413A1915C00A8B1A8 /* libikhoyo-net.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9CF7E413A1915C00A8B1A8 = {
+			isa = PBXGroup;
+			children = (
+				3D9CF7F413A1915C00A8B1A8 /* ikhoyo-net */,
+				3D9CF80513A1915C00A8B1A8 /* ikhoyo-netTests */,
+				3D9CF7F113A1915C00A8B1A8 /* Frameworks */,
+				3D9CF7F013A1915C00A8B1A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D9CF7F013A1915C00A8B1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF7EF13A1915C00A8B1A8 /* libikhoyo-net.a */,
+				3D9CF7FC13A1915C00A8B1A8 /* ikhoyo-netTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9CF7F113A1915C00A8B1A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF7F213A1915C00A8B1A8 /* Foundation.framework */,
+				3D9CF7FD13A1915C00A8B1A8 /* UIKit.framework */,
+				3D9CF80013A1915C00A8B1A8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D9CF7F413A1915C00A8B1A8 /* ikhoyo-net */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF82013A191D100A8B1A8 /* IkhoyoInputStream.h */,
+				3D9CF82113A191D100A8B1A8 /* IkhoyoInputStream.m */,
+				3D9CF82213A191D100A8B1A8 /* IkhoyoURLManager.h */,
+				3D9CF82313A191D100A8B1A8 /* IkhoyoURLManager.m */,
+				3D9CF7F513A1915C00A8B1A8 /* Supporting Files */,
+			);
+			path = "ikhoyo-net";
+			sourceTree = "<group>";
+		};
+		3D9CF7F513A1915C00A8B1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF7F613A1915C00A8B1A8 /* ikhoyo-net-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D9CF80513A1915C00A8B1A8 /* ikhoyo-netTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF80C13A1915C00A8B1A8 /* ikhoyo_netTests.h */,
+				3D9CF80E13A1915C00A8B1A8 /* ikhoyo_netTests.m */,
+				3D9CF80613A1915C00A8B1A8 /* Supporting Files */,
+			);
+			path = "ikhoyo-netTests";
+			sourceTree = "<group>";
+		};
+		3D9CF80613A1915C00A8B1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CF80713A1915C00A8B1A8 /* ikhoyo-netTests-Info.plist */,
+				3D9CF80813A1915C00A8B1A8 /* InfoPlist.strings */,
+				3D9CF80B13A1915C00A8B1A8 /* ikhoyo-netTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D9CF7ED13A1915C00A8B1A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF82413A191D100A8B1A8 /* IkhoyoInputStream.h in Headers */,
+				3D9CF82613A191D100A8B1A8 /* IkhoyoURLManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D9CF7EE13A1915C00A8B1A8 /* ikhoyo-net */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9CF81213A1915C00A8B1A8 /* Build configuration list for PBXNativeTarget "ikhoyo-net" */;
+			buildPhases = (
+				3D9CF7EB13A1915C00A8B1A8 /* Sources */,
+				3D9CF7EC13A1915C00A8B1A8 /* Frameworks */,
+				3D9CF7ED13A1915C00A8B1A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ikhoyo-net";
+			productName = "ikhoyo-net";
+			productReference = 3D9CF7EF13A1915C00A8B1A8 /* libikhoyo-net.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3D9CF7FB13A1915C00A8B1A8 /* ikhoyo-netTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9CF81513A1915C00A8B1A8 /* Build configuration list for PBXNativeTarget "ikhoyo-netTests" */;
+			buildPhases = (
+				3D9CF7F713A1915C00A8B1A8 /* Sources */,
+				3D9CF7F813A1915C00A8B1A8 /* Frameworks */,
+				3D9CF7F913A1915C00A8B1A8 /* Resources */,
+				3D9CF7FA13A1915C00A8B1A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9CF80313A1915C00A8B1A8 /* PBXTargetDependency */,
+			);
+			name = "ikhoyo-netTests";
+			productName = "ikhoyo-netTests";
+			productReference = 3D9CF7FC13A1915C00A8B1A8 /* ikhoyo-netTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9CF7E613A1915C00A8B1A8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3D9CF7E913A1915C00A8B1A8 /* Build configuration list for PBXProject "ikhoyo-net" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D9CF7E413A1915C00A8B1A8;
+			productRefGroup = 3D9CF7F013A1915C00A8B1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D9CF7EE13A1915C00A8B1A8 /* ikhoyo-net */,
+				3D9CF7FB13A1915C00A8B1A8 /* ikhoyo-netTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9CF7F913A1915C00A8B1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF80A13A1915C00A8B1A8 /* InfoPlist.strings in Resources */,
+				3D9CF80D13A1915C00A8B1A8 /* ikhoyo_netTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D9CF7FA13A1915C00A8B1A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9CF7EB13A1915C00A8B1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF82513A191D100A8B1A8 /* IkhoyoInputStream.m in Sources */,
+				3D9CF82713A191D100A8B1A8 /* IkhoyoURLManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9CF7F713A1915C00A8B1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CF80F13A1915C00A8B1A8 /* ikhoyo_netTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D9CF80313A1915C00A8B1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9CF7EE13A1915C00A8B1A8 /* ikhoyo-net */;
+			targetProxy = 3D9CF80213A1915C00A8B1A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D9CF80813A1915C00A8B1A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9CF80913A1915C00A8B1A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D9CF81013A1915C00A8B1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D9CF81113A1915C00A8B1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3D9CF81313A1915C00A8B1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ikhoyo_net.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-net/ikhoyo-net-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D9CF81413A1915C00A8B1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ikhoyo_net.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-net/ikhoyo-net-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D9CF81613A1915C00A8B1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-netTests/ikhoyo-netTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-netTests/ikhoyo-netTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3D9CF81713A1915C00A8B1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-netTests/ikhoyo-netTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-netTests/ikhoyo-netTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9CF7E913A1915C00A8B1A8 /* Build configuration list for PBXProject "ikhoyo-net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9CF81013A1915C00A8B1A8 /* Debug */,
+				3D9CF81113A1915C00A8B1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9CF81213A1915C00A8B1A8 /* Build configuration list for PBXNativeTarget "ikhoyo-net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9CF81313A1915C00A8B1A8 /* Debug */,
+				3D9CF81413A1915C00A8B1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D9CF81513A1915C00A8B1A8 /* Build configuration list for PBXNativeTarget "ikhoyo-netTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9CF81613A1915C00A8B1A8 /* Debug */,
+				3D9CF81713A1915C00A8B1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D9CF7E613A1915C00A8B1A8 /* Project object */;
+}

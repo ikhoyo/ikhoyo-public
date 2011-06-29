@@ -20,6 +20,14 @@
 		3D0CC8D3138CD36800772BAF /* libikhoyo-ui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		3D0CC8D6138DCDE200772BAF /* IkhoyoHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8D5138DCDE100772BAF /* IkhoyoHomeTableViewController.m */; };
 		3D0F8AF9139C2E4900B7A73C /* libikhoyo-sqlite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */; };
+		3D9F222B13B584F8003CA19A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F222A13B584F8003CA19A /* QuartzCore.framework */; };
+		3D9F223313B58E93003CA19A /* libikhoyo-net.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F223213B58E93003CA19A /* libikhoyo-net.a */; };
+		3D9F223B13B58FC3003CA19A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F223A13B58FC3003CA19A /* MobileCoreServices.framework */; };
+		3DBF08E313B65899007C403F /* libikhoyo-socrata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF08E213B65899007C403F /* libikhoyo-socrata.a */; };
+		3DBF095713B7AEC2007C403F /* libikhoyo-jsonkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF095613B7AEC2007C403F /* libikhoyo-jsonkit.a */; };
+		3DBF096013B9579B007C403F /* SocrataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF095E13B9579B007C403F /* SocrataViewController.m */; };
+		3DBF096113B9579B007C403F /* SocrataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF095F13B9579B007C403F /* SocrataViewController.xib */; };
+		3DBF096413B958C2007C403F /* SocrataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF096313B958C1007C403F /* SocrataTableViewController.m */; };
 		3DEF20C41390B888001CF2FA /* ikhoyo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF20C31390B888001CF2FA /* ikhoyo.png */; };
 		3DF7A5E7138DD5C300B28F22 /* SampleWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5E5138DD5C300B28F22 /* SampleWebView.m */; };
 		3DF7A5E8138DD5C300B28F22 /* SampleWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7A5E6138DD5C300B28F22 /* SampleWebView.xib */; };
@@ -49,6 +57,16 @@
 		3D0CC8D4138DCDE000772BAF /* IkhoyoHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoHomeTableViewController.h; sourceTree = "<group>"; };
 		3D0CC8D5138DCDE100772BAF /* IkhoyoHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoHomeTableViewController.m; sourceTree = "<group>"; };
 		3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-sqlite.a"; sourceTree = SOURCE_ROOT; };
+		3D9F222A13B584F8003CA19A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D9F223213B58E93003CA19A /* libikhoyo-net.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-net.a"; sourceTree = SOURCE_ROOT; };
+		3D9F223A13B58FC3003CA19A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3DBF08E213B65899007C403F /* libikhoyo-socrata.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-socrata.a"; sourceTree = SOURCE_ROOT; };
+		3DBF095613B7AEC2007C403F /* libikhoyo-jsonkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libikhoyo-jsonkit.a"; sourceTree = SOURCE_ROOT; };
+		3DBF095D13B9579B007C403F /* SocrataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocrataViewController.h; sourceTree = "<group>"; };
+		3DBF095E13B9579B007C403F /* SocrataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocrataViewController.m; sourceTree = "<group>"; };
+		3DBF095F13B9579B007C403F /* SocrataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocrataViewController.xib; sourceTree = "<group>"; };
+		3DBF096213B958C1007C403F /* SocrataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocrataTableViewController.h; sourceTree = "<group>"; };
+		3DBF096313B958C1007C403F /* SocrataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocrataTableViewController.m; sourceTree = "<group>"; };
 		3DEF20C31390B888001CF2FA /* ikhoyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ikhoyo.png; sourceTree = "<group>"; };
 		3DF7A5E4138DD5C300B28F22 /* SampleWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleWebView.h; sourceTree = "<group>"; };
 		3DF7A5E5138DD5C300B28F22 /* SampleWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleWebView.m; sourceTree = "<group>"; };
@@ -64,6 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBF095713B7AEC2007C403F /* libikhoyo-jsonkit.a in Frameworks */,
+				3DBF08E313B65899007C403F /* libikhoyo-socrata.a in Frameworks */,
+				3D9F223B13B58FC3003CA19A /* MobileCoreServices.framework in Frameworks */,
+				3D9F223313B58E93003CA19A /* libikhoyo-net.a in Frameworks */,
+				3D9F222B13B584F8003CA19A /* QuartzCore.framework in Frameworks */,
 				3D0F8AF9139C2E4900B7A73C /* libikhoyo-sqlite.a in Frameworks */,
 				3D0CC8D3138CD36800772BAF /* libikhoyo-ui.a in Frameworks */,
 				3D0CC861138C69D900772BAF /* UIKit.framework in Frameworks */,
@@ -78,12 +101,11 @@
 		3D0CC851138C69D900772BAF = {
 			isa = PBXGroup;
 			children = (
-				3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */,
 				3DEF20C31390B888001CF2FA /* ikhoyo.png */,
 				3DF7A65713908BD200B28F22 /* xcode-resources */,
-				3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */,
 				3D0CC883138C743F00772BAF /* icons */,
 				3D0CC866138C69D900772BAF /* ikhoyo-top */,
+				3D9F222D13B58585003CA19A /* Libraries */,
 				3D0CC85F138C69D900772BAF /* Frameworks */,
 				3D0CC85D138C69D900772BAF /* Products */,
 			);
@@ -100,6 +122,8 @@
 		3D0CC85F138C69D900772BAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D9F223A13B58FC3003CA19A /* MobileCoreServices.framework */,
+				3D9F222A13B584F8003CA19A /* QuartzCore.framework */,
 				3D0CC860138C69D900772BAF /* UIKit.framework */,
 				3D0CC862138C69D900772BAF /* Foundation.framework */,
 				3D0CC864138C69D900772BAF /* CoreGraphics.framework */,
@@ -110,6 +134,7 @@
 		3D0CC866138C69D900772BAF /* ikhoyo-top */ = {
 			isa = PBXGroup;
 			children = (
+				3D0CC867138C69D900772BAF /* Supporting Files */,
 				3D0CC86F138C69D900772BAF /* IkhoyoAppDelegate.h */,
 				3D0CC870138C69D900772BAF /* IkhoyoAppDelegate.m */,
 				3D0CC872138C69D900772BAF /* MainWindow.xib */,
@@ -117,7 +142,6 @@
 				3D0CC876138C69D900772BAF /* DetailViewController.m */,
 				3D0CC87B138C69D900772BAF /* RootViewController.h */,
 				3D0CC87C138C69D900772BAF /* RootViewController.m */,
-				3D0CC867138C69D900772BAF /* Supporting Files */,
 				3D0CC8D4138DCDE000772BAF /* IkhoyoHomeTableViewController.h */,
 				3D0CC8D5138DCDE100772BAF /* IkhoyoHomeTableViewController.m */,
 				3DF7A5E4138DD5C300B28F22 /* SampleWebView.h */,
@@ -125,6 +149,11 @@
 				3DF7A5E6138DD5C300B28F22 /* SampleWebView.xib */,
 				3DF7A652138DEB1600B28F22 /* SampleWebViewContext.h */,
 				3DF7A653138DEB1600B28F22 /* SampleWebViewContext.m */,
+				3DBF095D13B9579B007C403F /* SocrataViewController.h */,
+				3DBF095E13B9579B007C403F /* SocrataViewController.m */,
+				3DBF095F13B9579B007C403F /* SocrataViewController.xib */,
+				3DBF096213B958C1007C403F /* SocrataTableViewController.h */,
+				3DBF096313B958C1007C403F /* SocrataTableViewController.m */,
 			);
 			path = "ikhoyo-top";
 			sourceTree = "<group>";
@@ -147,6 +176,18 @@
 				3D0CC884138C74E300772BAF /* home.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		3D9F222D13B58585003CA19A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF095613B7AEC2007C403F /* libikhoyo-jsonkit.a */,
+				3DBF08E213B65899007C403F /* libikhoyo-socrata.a */,
+				3D9F223213B58E93003CA19A /* libikhoyo-net.a */,
+				3D0CC8D2138CD36800772BAF /* libikhoyo-ui.a */,
+				3D0F8AF8139C2E4900B7A73C /* libikhoyo-sqlite.a */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +247,7 @@
 				3DF7A656138DF19B00B28F22 /* www.png in Resources */,
 				3DF7A65813908BD200B28F22 /* xcode-resources in Resources */,
 				3DEF20C41390B888001CF2FA /* ikhoyo.png in Resources */,
+				3DBF096113B9579B007C403F /* SocrataViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +265,8 @@
 				3D0CC8D6138DCDE200772BAF /* IkhoyoHomeTableViewController.m in Sources */,
 				3DF7A5E7138DD5C300B28F22 /* SampleWebView.m in Sources */,
 				3DF7A654138DEB1700B28F22 /* SampleWebViewContext.m in Sources */,
+				3DBF096013B9579B007C403F /* SocrataViewController.m in Sources */,
+				3DBF096413B958C2007C403F /* SocrataTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +345,9 @@
 				HEADER_SEARCH_PATHS = (
 					"../ikhoyo-ui/**",
 					"../ikhoyo-sqlite/**",
+					"../ikhoyo-net/**",
+					"../ikhoyo-socrata/**",
+					"../ikhoyo-jsonkit/**",
 				);
 				INFOPLIST_FILE = "ikhoyo-top/ikhoyo-top-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -322,6 +369,9 @@
 				HEADER_SEARCH_PATHS = (
 					"../ikhoyo-ui/**",
 					"../ikhoyo-sqlite/**",
+					"../ikhoyo-net/**",
+					"../ikhoyo-socrata/**",
+					"../ikhoyo-jsonkit/**",
 				);
 				INFOPLIST_FILE = "ikhoyo-top/ikhoyo-top-Info.plist";
 				LIBRARY_SEARCH_PATHS = (

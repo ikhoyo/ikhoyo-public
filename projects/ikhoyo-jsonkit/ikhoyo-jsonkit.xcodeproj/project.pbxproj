@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DBF092D13B7AD8B007C403F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF092C13B7AD8B007C403F /* Foundation.framework */; };
+		3DBF093813B7AD8B007C403F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF093713B7AD8B007C403F /* UIKit.framework */; };
+		3DBF093913B7AD8B007C403F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF092C13B7AD8B007C403F /* Foundation.framework */; };
+		3DBF093B13B7AD8B007C403F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF093A13B7AD8B007C403F /* CoreGraphics.framework */; };
+		3DBF093E13B7AD8B007C403F /* libikhoyo-jsonkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF092913B7AD8B007C403F /* libikhoyo-jsonkit.a */; };
+		3DBF094413B7AD8B007C403F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF094213B7AD8B007C403F /* InfoPlist.strings */; };
+		3DBF094713B7AD8B007C403F /* ikhoyo_jsonkitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF094613B7AD8B007C403F /* ikhoyo_jsonkitTests.h */; };
+		3DBF094913B7AD8B007C403F /* ikhoyo_jsonkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF094813B7AD8B007C403F /* ikhoyo_jsonkitTests.m */; };
+		3DBF095413B7ADA8007C403F /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DBF095213B7ADA8007C403F /* JSONKit.h */; };
+		3DBF095513B7ADA8007C403F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF095313B7ADA8007C403F /* JSONKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DBF093C13B7AD8B007C403F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBF092013B7AD8B007C403F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DBF092813B7AD8B007C403F;
+			remoteInfo = "ikhoyo-jsonkit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DBF092913B7AD8B007C403F /* libikhoyo-jsonkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libikhoyo-jsonkit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBF092C13B7AD8B007C403F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DBF093013B7AD8B007C403F /* ikhoyo-jsonkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-jsonkit-Prefix.pch"; sourceTree = "<group>"; };
+		3DBF093613B7AD8B007C403F /* ikhoyo-jsonkitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ikhoyo-jsonkitTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBF093713B7AD8B007C403F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DBF093A13B7AD8B007C403F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DBF094113B7AD8B007C403F /* ikhoyo-jsonkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ikhoyo-jsonkitTests-Info.plist"; sourceTree = "<group>"; };
+		3DBF094313B7AD8B007C403F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBF094513B7AD8B007C403F /* ikhoyo-jsonkitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-jsonkitTests-Prefix.pch"; sourceTree = "<group>"; };
+		3DBF094613B7AD8B007C403F /* ikhoyo_jsonkitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ikhoyo_jsonkitTests.h; sourceTree = "<group>"; };
+		3DBF094813B7AD8B007C403F /* ikhoyo_jsonkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ikhoyo_jsonkitTests.m; sourceTree = "<group>"; };
+		3DBF095213B7ADA8007C403F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		3DBF095313B7ADA8007C403F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DBF092613B7AD8B007C403F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF092D13B7AD8B007C403F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBF093213B7AD8B007C403F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF093813B7AD8B007C403F /* UIKit.framework in Frameworks */,
+				3DBF093913B7AD8B007C403F /* Foundation.framework in Frameworks */,
+				3DBF093B13B7AD8B007C403F /* CoreGraphics.framework in Frameworks */,
+				3DBF093E13B7AD8B007C403F /* libikhoyo-jsonkit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DBF091E13B7AD8B007C403F = {
+			isa = PBXGroup;
+			children = (
+				3DBF092E13B7AD8B007C403F /* ikhoyo-jsonkit */,
+				3DBF093F13B7AD8B007C403F /* ikhoyo-jsonkitTests */,
+				3DBF092B13B7AD8B007C403F /* Frameworks */,
+				3DBF092A13B7AD8B007C403F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DBF092A13B7AD8B007C403F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF092913B7AD8B007C403F /* libikhoyo-jsonkit.a */,
+				3DBF093613B7AD8B007C403F /* ikhoyo-jsonkitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DBF092B13B7AD8B007C403F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF092C13B7AD8B007C403F /* Foundation.framework */,
+				3DBF093713B7AD8B007C403F /* UIKit.framework */,
+				3DBF093A13B7AD8B007C403F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DBF092E13B7AD8B007C403F /* ikhoyo-jsonkit */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF095213B7ADA8007C403F /* JSONKit.h */,
+				3DBF095313B7ADA8007C403F /* JSONKit.m */,
+				3DBF092F13B7AD8B007C403F /* Supporting Files */,
+			);
+			path = "ikhoyo-jsonkit";
+			sourceTree = "<group>";
+		};
+		3DBF092F13B7AD8B007C403F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF093013B7AD8B007C403F /* ikhoyo-jsonkit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DBF093F13B7AD8B007C403F /* ikhoyo-jsonkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF094613B7AD8B007C403F /* ikhoyo_jsonkitTests.h */,
+				3DBF094813B7AD8B007C403F /* ikhoyo_jsonkitTests.m */,
+				3DBF094013B7AD8B007C403F /* Supporting Files */,
+			);
+			path = "ikhoyo-jsonkitTests";
+			sourceTree = "<group>";
+		};
+		3DBF094013B7AD8B007C403F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF094113B7AD8B007C403F /* ikhoyo-jsonkitTests-Info.plist */,
+				3DBF094213B7AD8B007C403F /* InfoPlist.strings */,
+				3DBF094513B7AD8B007C403F /* ikhoyo-jsonkitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DBF092713B7AD8B007C403F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF095413B7ADA8007C403F /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3DBF092813B7AD8B007C403F /* ikhoyo-jsonkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBF094C13B7AD8B007C403F /* Build configuration list for PBXNativeTarget "ikhoyo-jsonkit" */;
+			buildPhases = (
+				3DBF092513B7AD8B007C403F /* Sources */,
+				3DBF092613B7AD8B007C403F /* Frameworks */,
+				3DBF092713B7AD8B007C403F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ikhoyo-jsonkit";
+			productName = "ikhoyo-jsonkit";
+			productReference = 3DBF092913B7AD8B007C403F /* libikhoyo-jsonkit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3DBF093513B7AD8B007C403F /* ikhoyo-jsonkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBF094F13B7AD8B007C403F /* Build configuration list for PBXNativeTarget "ikhoyo-jsonkitTests" */;
+			buildPhases = (
+				3DBF093113B7AD8B007C403F /* Sources */,
+				3DBF093213B7AD8B007C403F /* Frameworks */,
+				3DBF093313B7AD8B007C403F /* Resources */,
+				3DBF093413B7AD8B007C403F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DBF093D13B7AD8B007C403F /* PBXTargetDependency */,
+			);
+			name = "ikhoyo-jsonkitTests";
+			productName = "ikhoyo-jsonkitTests";
+			productReference = 3DBF093613B7AD8B007C403F /* ikhoyo-jsonkitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DBF092013B7AD8B007C403F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3DBF092313B7AD8B007C403F /* Build configuration list for PBXProject "ikhoyo-jsonkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DBF091E13B7AD8B007C403F;
+			productRefGroup = 3DBF092A13B7AD8B007C403F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DBF092813B7AD8B007C403F /* ikhoyo-jsonkit */,
+				3DBF093513B7AD8B007C403F /* ikhoyo-jsonkitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DBF093313B7AD8B007C403F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF094413B7AD8B007C403F /* InfoPlist.strings in Resources */,
+				3DBF094713B7AD8B007C403F /* ikhoyo_jsonkitTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DBF093413B7AD8B007C403F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DBF092513B7AD8B007C403F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF095513B7ADA8007C403F /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBF093113B7AD8B007C403F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBF094913B7AD8B007C403F /* ikhoyo_jsonkitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DBF093D13B7AD8B007C403F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DBF092813B7AD8B007C403F /* ikhoyo-jsonkit */;
+			targetProxy = 3DBF093C13B7AD8B007C403F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DBF094213B7AD8B007C403F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBF094313B7AD8B007C403F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DBF094A13B7AD8B007C403F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DBF094B13B7AD8B007C403F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3DBF094D13B7AD8B007C403F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ikhoyo_jsonkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-jsonkit/ikhoyo-jsonkit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DBF094E13B7AD8B007C403F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ikhoyo_jsonkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-jsonkit/ikhoyo-jsonkit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DBF095013B7AD8B007C403F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-jsonkitTests/ikhoyo-jsonkitTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-jsonkitTests/ikhoyo-jsonkitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3DBF095113B7AD8B007C403F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-jsonkitTests/ikhoyo-jsonkitTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-jsonkitTests/ikhoyo-jsonkitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DBF092313B7AD8B007C403F /* Build configuration list for PBXProject "ikhoyo-jsonkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBF094A13B7AD8B007C403F /* Debug */,
+				3DBF094B13B7AD8B007C403F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBF094C13B7AD8B007C403F /* Build configuration list for PBXNativeTarget "ikhoyo-jsonkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBF094D13B7AD8B007C403F /* Debug */,
+				3DBF094E13B7AD8B007C403F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DBF094F13B7AD8B007C403F /* Build configuration list for PBXNativeTarget "ikhoyo-jsonkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBF095013B7AD8B007C403F /* Debug */,
+				3DBF095113B7AD8B007C403F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DBF092013B7AD8B007C403F /* Project object */;
+}

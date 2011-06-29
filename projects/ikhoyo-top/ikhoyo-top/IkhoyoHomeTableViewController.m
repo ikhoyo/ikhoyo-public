@@ -49,6 +49,7 @@
     self.webAppDictionaries = [[[NSMutableArray alloc] init] autorelease];
     
     [self.rows addObject:@"Sample Web View"];
+    [self.rows addObject:@"Socrata Table"];
     UIImage* image = [UIImage imageNamed:@"www.png"];
     NSString* dir = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"xcode-resources"] stringByAppendingPathComponent:@"webviews"] stringByAppendingPathComponent:@"sample-web-view"];
     [self.webAppDictionaries addObject:[NSDictionary dictionaryWithObjectsAndKeys:dir,@"dir",image,@"image", nil]];
@@ -94,8 +95,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary* params = [self.webAppDictionaries objectAtIndex:indexPath.row];
-    [self.detailViewController addTab:@"SampleWebView" withClass:@"SampleWebView" andImage:[params valueForKey:@"image"] andParam:[params valueForKey:@"dir"]];
+    int iweb = [self.webAppDictionaries count];
+    if (indexPath.row<iweb) {
+        NSDictionary* params = [self.webAppDictionaries objectAtIndex:indexPath.row];
+        [self.detailViewController addTab:@"SampleWebView" withClass:@"SampleWebView" andImage:[params valueForKey:@"image"] andParam:[params valueForKey:@"dir"]];
+    } else {
+        switch (indexPath.row-iweb) {
+            case 0:
+                [self.detailViewController addTab:@"Socrata" withClass:@"SocrataViewController" andImage:nil andParam:nil];
+                break;
+        }
+    }
 }
 
 @end

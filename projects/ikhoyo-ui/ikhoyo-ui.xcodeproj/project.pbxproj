@@ -15,6 +15,10 @@
 		3D0CC8CD138CC49F00772BAF /* IkhoyoDynamicTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8CB138CC49E00772BAF /* IkhoyoDynamicTabBarController.m */; };
 		3D0CC8D0138CC5C000772BAF /* IkhoyoDynamicTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0CC8CE138CC5BF00772BAF /* IkhoyoDynamicTabViewController.h */; };
 		3D0CC8D1138CC5C000772BAF /* IkhoyoDynamicTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CC8CF138CC5BF00772BAF /* IkhoyoDynamicTabViewController.m */; };
+		3D9CF7E113A1594100A8B1A8 /* IkhoyoTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9CF7DF13A1594100A8B1A8 /* IkhoyoTableViewController.h */; };
+		3D9CF7E213A1594100A8B1A8 /* IkhoyoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CF7E013A1594100A8B1A8 /* IkhoyoTableViewController.m */; };
+		3D9CF82A13A298B400A8B1A8 /* IkhoyoAddItemViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9CF82813A298B300A8B1A8 /* IkhoyoAddItemViewController.h */; };
+		3D9CF82B13A298B400A8B1A8 /* IkhoyoAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CF82913A298B400A8B1A8 /* IkhoyoAddItemViewController.m */; };
 		3DF7A5EC138DD84000B28F22 /* IkhoyoWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EA138DD83F00B28F22 /* IkhoyoWebViewController.h */; };
 		3DF7A5ED138DD84000B28F22 /* IkhoyoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */; };
 		3DF7A5F1138DD91400B28F22 /* IkhoyoWebViewContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */; };
@@ -79,6 +83,10 @@
 		3D0CC8CB138CC49E00772BAF /* IkhoyoDynamicTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoDynamicTabBarController.m; sourceTree = "<group>"; };
 		3D0CC8CE138CC5BF00772BAF /* IkhoyoDynamicTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoDynamicTabViewController.h; sourceTree = "<group>"; };
 		3D0CC8CF138CC5BF00772BAF /* IkhoyoDynamicTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoDynamicTabViewController.m; sourceTree = "<group>"; };
+		3D9CF7DF13A1594100A8B1A8 /* IkhoyoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoTableViewController.h; sourceTree = "<group>"; };
+		3D9CF7E013A1594100A8B1A8 /* IkhoyoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoTableViewController.m; sourceTree = "<group>"; };
+		3D9CF82813A298B300A8B1A8 /* IkhoyoAddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoAddItemViewController.h; sourceTree = "<group>"; };
+		3D9CF82913A298B400A8B1A8 /* IkhoyoAddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoAddItemViewController.m; sourceTree = "<group>"; };
 		3DF7A5EA138DD83F00B28F22 /* IkhoyoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebViewController.h; sourceTree = "<group>"; };
 		3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoWebViewController.m; sourceTree = "<group>"; };
 		3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoWebViewContext.h; sourceTree = "<group>"; };
@@ -185,6 +193,10 @@
 				3DF7A5EB138DD83F00B28F22 /* IkhoyoWebViewController.m */,
 				3DF7A5EF138DD91300B28F22 /* IkhoyoWebViewContext.h */,
 				3DF7A5F0138DD91400B28F22 /* IkhoyoWebViewContext.m */,
+				3D9CF7DF13A1594100A8B1A8 /* IkhoyoTableViewController.h */,
+				3D9CF7E013A1594100A8B1A8 /* IkhoyoTableViewController.m */,
+				3D9CF82813A298B300A8B1A8 /* IkhoyoAddItemViewController.h */,
+				3D9CF82913A298B400A8B1A8 /* IkhoyoAddItemViewController.m */,
 			);
 			path = "ikhoyo-ui";
 			sourceTree = "<group>";
@@ -291,6 +303,8 @@
 				3DF7A64C138DE66000B28F22 /* NSArray+TKCategory.h in Headers */,
 				3DF7A64E138DE66000B28F22 /* NSDate+TKCategory.h in Headers */,
 				3DF7A650138DE66000B28F22 /* NSString+TKCategory.h in Headers */,
+				3D9CF7E113A1594100A8B1A8 /* IkhoyoTableViewController.h in Headers */,
+				3D9CF82A13A298B400A8B1A8 /* IkhoyoAddItemViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +383,8 @@
 				3DF7A64D138DE66000B28F22 /* NSArray+TKCategory.m in Sources */,
 				3DF7A64F138DE66000B28F22 /* NSDate+TKCategory.m in Sources */,
 				3DF7A651138DE66000B28F22 /* NSString+TKCategory.m in Sources */,
+				3D9CF7E213A1594100A8B1A8 /* IkhoyoTableViewController.m in Sources */,
+				3D9CF82B13A298B400A8B1A8 /* IkhoyoAddItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,7 +45,7 @@
     self = [super init];
     if (self) {
 		h = stmt;
-		database = db;
+		database = [db retain];
 		cls = lCls ? NSClassFromString(lCls) : nil;
 		rows = [[NSMutableArray alloc] initWithCapacity:128];
     }
@@ -112,13 +112,14 @@
 - (id) bind:(NSArray*) args reset:(Boolean) reset {
 	if (reset) [self reset];
 	
+    int inc = 1; // rowid or autoincrement column is ignored
 	id arg = nil;
 	int count = sqlite3_bind_parameter_count([self statement]);
 	if (count!=[args count])
 		arg = [[[IkhoyoError alloc] initWithFormat:@"Wrong number of arguments, expected: %d, passed: %d",count,[args count]] autorelease];
 	else {
 		for (int i=0;i<count;i++) {
-			id err = [self bind:[args objectAtIndex:i] toColumn:i];
+			id err = [self bind:[args objectAtIndex:i] toColumn:i+inc];
 			if (arg) arg = err;
 		}
 	}
@@ -263,8 +264,7 @@
 	if (ret==SQLITE_OK) {
 		IkhoyoStatement* stmt = [[[IkhoyoStatement alloc] initWithStatement:statement usingClass:cls andDatabase:self] autorelease];
 		arg = [stmt bind:args reset:NO];
-		if (arg) [stmt release];
-		else arg = stmt;
+		if (!arg) arg = stmt;
 	} else
 		arg = [self sqliteError:@"Error preparing statement"];
 	return arg;
@@ -329,6 +329,17 @@
 
 }
 
+- (void) exec:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block {
+	__block IkhoyoDatabase* me = self;
+	[self prepare:st args:args withBlock:^(id arg) {
+        __block IkhoyoStatement* stmt = arg;
+ 		[self.worker performBlock:^(id obj){
+			id ret = [stmt isKindOfClass:[IkhoyoError class]] ? stmt : [stmt exec];
+			[me.worker performBlockOnMainThread:block withObject:ret];
+		}];
+	}];
+}
+
 - (void) insertOrUpdate:(NSString*) st withArgs:(NSArray*) args withBlock:(IkhoyoBlock) block {
 	__block IkhoyoDatabase* me = self;
 	[self prepare:st args:args withBlock:^(id arg) {
@@ -338,6 +349,11 @@
 			[me.worker performBlockOnMainThread:block withObject:ret];
 		}];
 	}];
+}
+
+- (id) execFromDatabaseThread:(NSString*) sql withArgs:(NSArray*) args {
+    IkhoyoStatement* stmt = [self prepare:sql args:args usingClass:nil];
+    return [stmt isKindOfClass:[IkhoyoError class]] ? stmt : [stmt exec];
 }
 
 - (void) execOnDatabaseThread:(IkhoyoBlock) block {

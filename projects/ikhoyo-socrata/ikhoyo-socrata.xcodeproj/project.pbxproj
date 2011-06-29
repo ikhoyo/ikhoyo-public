@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D9F224B13B59129003CA19A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F224A13B59129003CA19A /* Foundation.framework */; };
+		3D9F225613B59129003CA19A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F225513B59129003CA19A /* UIKit.framework */; };
+		3D9F225713B59129003CA19A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F224A13B59129003CA19A /* Foundation.framework */; };
+		3D9F225913B59129003CA19A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F225813B59129003CA19A /* CoreGraphics.framework */; };
+		3D9F225C13B59129003CA19A /* libikhoyo-socrata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9F224713B59129003CA19A /* libikhoyo-socrata.a */; };
+		3D9F226213B59129003CA19A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F226013B59129003CA19A /* InfoPlist.strings */; };
+		3D9F226513B59129003CA19A /* ikhoyo_socrataTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F226413B59129003CA19A /* ikhoyo_socrataTests.h */; };
+		3D9F226713B59129003CA19A /* ikhoyo_socrataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F226613B59129003CA19A /* ikhoyo_socrataTests.m */; };
+		3D9F227213B59194003CA19A /* IkhoyoSocrata.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9F227013B59194003CA19A /* IkhoyoSocrata.h */; };
+		3D9F227313B59194003CA19A /* IkhoyoSocrata.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F227113B59194003CA19A /* IkhoyoSocrata.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D9F225A13B59129003CA19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9F223E13B59128003CA19A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9F224613B59129003CA19A;
+			remoteInfo = "ikhoyo-socrata";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D9F224713B59129003CA19A /* libikhoyo-socrata.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libikhoyo-socrata.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9F224A13B59129003CA19A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D9F224E13B59129003CA19A /* ikhoyo-socrata-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-socrata-Prefix.pch"; sourceTree = "<group>"; };
+		3D9F225413B59129003CA19A /* ikhoyo-socrataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ikhoyo-socrataTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9F225513B59129003CA19A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D9F225813B59129003CA19A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D9F225F13B59129003CA19A /* ikhoyo-socrataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ikhoyo-socrataTests-Info.plist"; sourceTree = "<group>"; };
+		3D9F226113B59129003CA19A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D9F226313B59129003CA19A /* ikhoyo-socrataTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ikhoyo-socrataTests-Prefix.pch"; sourceTree = "<group>"; };
+		3D9F226413B59129003CA19A /* ikhoyo_socrataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ikhoyo_socrataTests.h; sourceTree = "<group>"; };
+		3D9F226613B59129003CA19A /* ikhoyo_socrataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ikhoyo_socrataTests.m; sourceTree = "<group>"; };
+		3D9F227013B59194003CA19A /* IkhoyoSocrata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IkhoyoSocrata.h; sourceTree = "<group>"; };
+		3D9F227113B59194003CA19A /* IkhoyoSocrata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IkhoyoSocrata.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9F224413B59129003CA19A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F224B13B59129003CA19A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F225013B59129003CA19A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F225613B59129003CA19A /* UIKit.framework in Frameworks */,
+				3D9F225713B59129003CA19A /* Foundation.framework in Frameworks */,
+				3D9F225913B59129003CA19A /* CoreGraphics.framework in Frameworks */,
+				3D9F225C13B59129003CA19A /* libikhoyo-socrata.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9F223C13B59128003CA19A = {
+			isa = PBXGroup;
+			children = (
+				3D9F224C13B59129003CA19A /* ikhoyo-socrata */,
+				3D9F225D13B59129003CA19A /* ikhoyo-socrataTests */,
+				3D9F224913B59129003CA19A /* Frameworks */,
+				3D9F224813B59129003CA19A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D9F224813B59129003CA19A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F224713B59129003CA19A /* libikhoyo-socrata.a */,
+				3D9F225413B59129003CA19A /* ikhoyo-socrataTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9F224913B59129003CA19A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F224A13B59129003CA19A /* Foundation.framework */,
+				3D9F225513B59129003CA19A /* UIKit.framework */,
+				3D9F225813B59129003CA19A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D9F224C13B59129003CA19A /* ikhoyo-socrata */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F224D13B59129003CA19A /* Supporting Files */,
+				3D9F227013B59194003CA19A /* IkhoyoSocrata.h */,
+				3D9F227113B59194003CA19A /* IkhoyoSocrata.m */,
+			);
+			path = "ikhoyo-socrata";
+			sourceTree = "<group>";
+		};
+		3D9F224D13B59129003CA19A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F224E13B59129003CA19A /* ikhoyo-socrata-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D9F225D13B59129003CA19A /* ikhoyo-socrataTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F226413B59129003CA19A /* ikhoyo_socrataTests.h */,
+				3D9F226613B59129003CA19A /* ikhoyo_socrataTests.m */,
+				3D9F225E13B59129003CA19A /* Supporting Files */,
+			);
+			path = "ikhoyo-socrataTests";
+			sourceTree = "<group>";
+		};
+		3D9F225E13B59129003CA19A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F225F13B59129003CA19A /* ikhoyo-socrataTests-Info.plist */,
+				3D9F226013B59129003CA19A /* InfoPlist.strings */,
+				3D9F226313B59129003CA19A /* ikhoyo-socrataTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D9F224513B59129003CA19A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F227213B59194003CA19A /* IkhoyoSocrata.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D9F224613B59129003CA19A /* ikhoyo-socrata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F226A13B59129003CA19A /* Build configuration list for PBXNativeTarget "ikhoyo-socrata" */;
+			buildPhases = (
+				3D9F224313B59129003CA19A /* Sources */,
+				3D9F224413B59129003CA19A /* Frameworks */,
+				3D9F224513B59129003CA19A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ikhoyo-socrata";
+			productName = "ikhoyo-socrata";
+			productReference = 3D9F224713B59129003CA19A /* libikhoyo-socrata.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3D9F225313B59129003CA19A /* ikhoyo-socrataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F226D13B59129003CA19A /* Build configuration list for PBXNativeTarget "ikhoyo-socrataTests" */;
+			buildPhases = (
+				3D9F224F13B59129003CA19A /* Sources */,
+				3D9F225013B59129003CA19A /* Frameworks */,
+				3D9F225113B59129003CA19A /* Resources */,
+				3D9F225213B59129003CA19A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9F225B13B59129003CA19A /* PBXTargetDependency */,
+			);
+			name = "ikhoyo-socrataTests";
+			productName = "ikhoyo-socrataTests";
+			productReference = 3D9F225413B59129003CA19A /* ikhoyo-socrataTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9F223E13B59128003CA19A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3D9F224113B59128003CA19A /* Build configuration list for PBXProject "ikhoyo-socrata" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D9F223C13B59128003CA19A;
+			productRefGroup = 3D9F224813B59129003CA19A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D9F224613B59129003CA19A /* ikhoyo-socrata */,
+				3D9F225313B59129003CA19A /* ikhoyo-socrataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9F225113B59129003CA19A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F226213B59129003CA19A /* InfoPlist.strings in Resources */,
+				3D9F226513B59129003CA19A /* ikhoyo_socrataTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D9F225213B59129003CA19A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9F224313B59129003CA19A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F227313B59194003CA19A /* IkhoyoSocrata.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F224F13B59129003CA19A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F226713B59129003CA19A /* ikhoyo_socrataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D9F225B13B59129003CA19A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9F224613B59129003CA19A /* ikhoyo-socrata */;
+			targetProxy = 3D9F225A13B59129003CA19A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D9F226013B59129003CA19A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9F226113B59129003CA19A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D9F226813B59129003CA19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-net/**",
+					"../ikhoyo-sqlite/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D9F226913B59129003CA19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-net/**",
+					"../ikhoyo-sqlite/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3D9F226B13B59129003CA19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/ikhoyo_socrata.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-socrata/ikhoyo-socrata-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-net/**",
+					"../ikhoyo-sqlite/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D9F226C13B59129003CA19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/ikhoyo_socrata.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-socrata/ikhoyo-socrata-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../ikhoyo-net/**",
+					"../ikhoyo-sqlite/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D9F226E13B59129003CA19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-socrataTests/ikhoyo-socrataTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-socrataTests/ikhoyo-socrataTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3D9F226F13B59129003CA19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ikhoyo-socrataTests/ikhoyo-socrataTests-Prefix.pch";
+				INFOPLIST_FILE = "ikhoyo-socrataTests/ikhoyo-socrataTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9F224113B59128003CA19A /* Build configuration list for PBXProject "ikhoyo-socrata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F226813B59129003CA19A /* Debug */,
+				3D9F226913B59129003CA19A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F226A13B59129003CA19A /* Build configuration list for PBXNativeTarget "ikhoyo-socrata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F226B13B59129003CA19A /* Debug */,
+				3D9F226C13B59129003CA19A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F226D13B59129003CA19A /* Build configuration list for PBXNativeTarget "ikhoyo-socrataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F226E13B59129003CA19A /* Debug */,
+				3D9F226F13B59129003CA19A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D9F223E13B59128003CA19A /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ikhoyo-jsonkit' target in the 'ikhoyo-jsonkit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
